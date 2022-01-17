@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.row{
+    display: flex;
+    height: 100vh;
+}
+
+.s-1{
+    width: 10%;
+    background-color: bisque;
+}
+.s-8{
+    width: 80%;
+    background-color: #1253;
+}
+[class*="s-"].mobile{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .row{
+        display: block;
+    }
+    .col{
+        display: block;
+        padding: 5% ;
+    }   
+    [class*="s-"]{
+        width: 100%;
+    }
+    [class*="s-"].mobile{
+        display: block;
+    }
+}
