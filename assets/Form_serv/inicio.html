@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agregar registro</title>
+</head>
+<body>
+	<!--Formulario con el metodo POST (mandar) y accion de abrir el archivo crear.php
+		A todos los elementos se les agrega el valor de nombre ya que con ese valor PHP accede-->
+	<form method="POST" action="crear.php">
+		<label>Nombre de servicio:</label><br>
+		<input type="text" name="nombre" placeholder="Nombre de servicio"><br>
+		<label>Costo:</label><br>
+		<input type="number" name="costo" placeholder="Costo de servicio"><br>
+		<label>Descripcion:</label><br>
+		<textarea name="descripcion" rows="2" placeholder="Descripcion del servicio"></textarea><br>
+		<input type="submit" name="insertar" value="INSERTAR DATOS">
+	</form>
+</body>
+</html>
